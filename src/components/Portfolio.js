@@ -23,9 +23,9 @@ const Projects = () => {
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">the fight</MDBCardTitle>
+            <MDBCardTitle tag="h5">Password Generator</MDBCardTitle>
             <MDBCardText>this is my Projects</MDBCardText>
-            <MDBBtn href="git" color="primary" size="md">
+            <MDBBtn href="https//github.com/1gerardo3" color="primary" size="md">
               <MDBIcon icon="clone left" className="mr-2" />
               View Project
             </MDBBtn>

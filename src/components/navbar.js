@@ -4,45 +4,46 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  MDBNavLink,
+  MDBNav,
   MDBIcon,
 } from "mdbreact";
 
 function Navbar() {
   return (
     <MDBNavbar
-      color="special-color-dark"
-      dark
-      expand="md"
-      style={{ width: "100%" }}
+      color="blue"
+      light
+      expand="lg"
+      className="mr-1"
+      
     >
       <MDBNavbarBrand>
-        <strong className="white-text">Collin P. Hodgson</strong>
+        <strong className="white-text">Gerardo Alvarez</strong>
       </MDBNavbarBrand>
       <MDBNavbarNav right>
-        <MDBNavItem>
-          <MDBNavLink className="waves-effect waves-light" to="/about">
+        <MDBNavItem className="mr-3">
+          <MDBNav className="waves-effect waves-light" to="/about">
             <MDBIcon icon="home" className="mr-1" />
             About Me
-          </MDBNavLink>
+          </MDBNav>
         </MDBNavItem>
-        <MDBNavItem>
-          <MDBNavLink className="waves-effect waves-light" to="/portfolio">
+        <MDBNavItem className="mr-3">
+          <MDBNav className="waves-effect waves-light" to="/portfolio">
             <MDBIcon icon="code" className="mr-1" />
             Apps
-          </MDBNavLink>
+          </MDBNav>
         </MDBNavItem>
-        <MDBNavItem>
-          <MDBNavLink className="waves-effect waves-light" to="/resume">
+        <MDBNavItem className="mr-3">
+          <MDBNav className="waves-effect waves-light" to="/resume">
             <MDBIcon icon="file" className="mr-1" />
             Resume
-          </MDBNavLink>
+          </MDBNav>
         </MDBNavItem>
-        <MDBNavItem>
-          <MDBNavLink className="waves-effect waves-light" to="/contact">
+        <MDBNavItem className="mr-3">
+          <MDBNav className="waves-effect waves-light" to="/contact">
             <MDBIcon icon="envelope" className="mr-1" />
             Contact
-          </MDBNavLink>
+          </MDBNav>
         </MDBNavItem>
       </MDBNavbarNav>
     </MDBNavbar>
@@ -50,4 +51,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

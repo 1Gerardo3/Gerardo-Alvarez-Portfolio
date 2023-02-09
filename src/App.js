@@ -1,7 +1,7 @@
 // this will be the last page to set up we i need to import all the file
 import React from "react";
-import {HashRouter, Route} from "react-router-dom";
-import Navbar from "./components/Navbar";
+import {HashRouter, Routes} from "react-router-dom";
+
 import Container from "./components/Container"
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -21,13 +21,12 @@ function App() {
     <HashRouter basename="/">
       
       <Container>
-  <Navbar/>
         <Wrapper>
-        <Route exact path="/" component={About}/>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/resume" component={Res}/>
-          <Route exact path="/projects" component={Portfolio}/>
-          <Route exact path="/contact" component={Contact}/>
+        <Routes path="/" element={About}/>
+          <Routes path="/about" component={About}/>
+          <Routes path="/resume" component={Res}/>
+          <Routes path="/projects" component={Portfolio}/>
+          <Routes path="/contact" component={Contact}/>
         </Wrapper>
         <Footer/>
       </Container>

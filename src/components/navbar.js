@@ -4,46 +4,40 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  MDBNav,
+  MDBNavLink,
   MDBIcon,
 } from "mdbreact";
 
 function Navbar() {
   return (
-    <MDBNavbar
-      color="blue"
-      light
-      expand="lg"
-      className="mr-1"
-      
-    >
+    <MDBNavbar color="blue" light expand="lg" className="mr-1">
       <MDBNavbarBrand>
         <strong className="white-text">Gerardo Alvarez</strong>
       </MDBNavbarBrand>
       <MDBNavbarNav right>
         <MDBNavItem className="mr-3">
-          <MDBNav className="waves-effect waves-light" to="/about">
+          <MDBNavLink className="waves-effect waves-light" to="/about">
             <MDBIcon icon="home" className="mr-1" />
             About Me
-          </MDBNav>
+          </MDBNavLink>
         </MDBNavItem>
         <MDBNavItem className="mr-3">
-          <MDBNav className="waves-effect waves-light" to="/portfolio">
+          <MDBNavLink className="waves-effect waves-light" to="/portfolio">
             <MDBIcon icon="code" className="mr-1" />
             Apps
-          </MDBNav>
+          </MDBNavLink>
         </MDBNavItem>
         <MDBNavItem className="mr-3">
-          <MDBNav className="waves-effect waves-light" to="/resume">
+          <MDBNavLink className="waves-effect waves-light" to="/res">
             <MDBIcon icon="file" className="mr-1" />
             Resume
-          </MDBNav>
+          </MDBNavLink>
         </MDBNavItem>
         <MDBNavItem className="mr-3">
-          <MDBNav className="waves-effect waves-light" to="/contact">
+          <MDBNavLink className="waves-effect waves-light" to="/contact">
             <MDBIcon icon="envelope" className="mr-1" />
             Contact
-          </MDBNav>
+          </MDBNavLink>
         </MDBNavItem>
       </MDBNavbarNav>
     </MDBNavbar>

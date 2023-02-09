@@ -8,6 +8,8 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
 ReactDOM.render(
-    <App />,
+  <React.StrictMode>
+  <App />
+</React.StrictMode>,
   document.getElementById("root")
 );

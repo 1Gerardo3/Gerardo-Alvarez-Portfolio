@@ -10,7 +10,7 @@ return (
             <hr className="bg-dark"/>
             <img
             style={{height:"250"}} 
-            src="./maxresdefault.jpg"
+            src=""
             className="pr-4 pb-3 img-fluid"
             alt="Gerardo Alvarez"
             />

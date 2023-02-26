@@ -1,0 +1,12 @@
+.nav{
+    background-color: rgb(12, 36, 173);
+
+}
+
+.me{
+    font-size: 25pt;
+}
+
+.me:hover{
+    color: rgb(236, 236, 245);
+}

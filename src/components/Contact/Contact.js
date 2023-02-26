@@ -1,9 +1,9 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBIcon } from "mdb-react-ui-kit";
 
 const ContactInfo = () => {
 return (
-    <MDBContainer className="mt-5 bg-light">
+    <MDBContainer className="mt-5">
         <MDBRow>
         <MDBCol className="text-center" md="12">
             <h2 className="blue">Contact Info</h2>
@@ -12,7 +12,7 @@ return (
             style={{height:"250"}} 
             src="./maxresdefault.jpg"
             className="pr-4 pb-3 img-fluid"
-            alt="Gera"
+            alt="Gerardo Alvarez"
             />
             <h4 >
             I recently gradated a Full Stack Web Development Bootcamp from
@@ -25,13 +25,13 @@ return (
             </h4>
             <hr className="hr-light w-50"/>
             <h3>Cell Phone</h3>
-            <hr className="hr-dark w-75"/>
+        
             <a href="Cell:509-433-4065">
                 <MDBIcon icon="phone-alt"/>509-433-4065
             </a>
             <hr className="hr-light w-75"/>
             <h3>E-Mail</h3>
-            <hr className="hr-dark w-50"/>
+           
             <a href="mailto:1gerardo3@gmail.com">
                 <MDBIcon icon="envelope"/> 1Gerardo3@gmail.com
             </a>

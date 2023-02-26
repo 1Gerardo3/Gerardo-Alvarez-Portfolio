@@ -1,38 +1,32 @@
-// this will be the last page to set up we i need to import all the file
-import React from "react";
-import {HashRouter, Routes} from "react-router-dom";
+import "./App.css";
 
-import Container from "./components/Container"
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-import About from "./Pages/About";
-import Portfolio from "./Pages/Portfolio";
-import Contact from "./Pages/Contact";
-import Res from "./Pages/ResumeDL"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About_me/about";
+import Resumeid from "./components/Resume/Resume";
+import Projects from "./components/myProjects/portfolio";
+import ContactInfo from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 
-
-
-
- 
-// this is what will show on the main page
 function App() {
   return (
-    <HashRouter basename="/">
-      
-      <Container>
-        <Wrapper>
-        <Routes path="/" element={About}/>
-          <Routes path="/about" component={About}/>
-          <Routes path="/resume" component={Res}/>
-          <Routes path="/projects" component={Portfolio}/>
-          <Routes path="/contact" component={Contact}/>
-        </Wrapper>
-        <Footer/>
-      </Container>
-    </HashRouter>
+    <div className="App">
+      <Navbar />
+    
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<About/>}/>
+            <Route path="About" element={<About />} />
+            <Route path="Projects" element={<Projects />} />
+            <Route path="Resume" element={<Resumeid />} />
+            <Route path="Contact" element={<ContactInfo />} />
+          </Routes>
+        </BrowserRouter>
+    
+      <Footer />
+    </div>
   );
 }
 
 export default App;
- 

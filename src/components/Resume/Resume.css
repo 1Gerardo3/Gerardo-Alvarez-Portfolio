@@ -1,0 +1,47 @@
+.flex{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+h1{
+    font-size: 45pt;
+}
+.bg{
+    color: black;
+    background-color: rgb(184, 179, 179);
+    border-radius: 10px;
+}
+
+.gl{
+    color: black;
+    background-color: rgb(184, 179, 179);;
+    border-radius: 10px;
+}
+
+aside{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(184, 179, 179);
+ float:right;
+}
+
+ .res{
+    height: 112vh;
+    width: 80vw;
+ }
+
+ .aside{
+    margin: 20px;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(183, 216, 243);
+ }
+
+
+h5{
+    background-color: black;
+    color: wheat;
+}
